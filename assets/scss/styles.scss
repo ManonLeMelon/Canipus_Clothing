@@ -1,0 +1,412 @@
+// Imports scss
+@import "variables";
+
+// Imports css
+@import url("bootstrap.css");
+@import url("all.css");
+
+@font-face {
+    font-family: 'Segoe UI Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Regular'), url('Segoe UI.woff') format('woff');
+    }
+ @font-face {
+    font-family: 'Segoe UI Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Italic'), url('Segoe UI Italic.woff') format('woff');
+    }
+@font-face {
+    font-family: 'Segoe UI Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Bold'), url('Segoe UI Bold.woff') format('woff');
+    }
+@font-face {
+    font-family: 'Segoe UI Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Bold Italic'), url('Segoe UI Bold Italic.woff') format('woff');
+    }
+
+body{
+    font-family: $police;
+    color: $couleur-police;
+}
+
+//PARTIE NAVBAR
+.input-group{
+    margin: 15px;
+}
+
+#connexion{
+    margin-top:15px;
+}
+
+header{
+    background: url(../img/logo_web_fond.png);
+    background-size: cover;
+}
+//Logo canipus
+#logo{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top:15px;
+}
+img{
+    width: 200px;
+}
+
+//barre de recherche
+.input-group{
+	input, button{
+		border-color: $couleur-police;
+	}
+	input{
+		border-top-left-radius: 20px;
+		border-bottom-left-radius: 20px;
+		border-right: none;
+	}
+	button{
+		border-top-right-radius: 20px;
+		border-bottom-right-radius: 20px;
+        border-left:none;
+        background-color: white;
+	}
+}
+.input-group{
+     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.liens{
+    color: $couleur-police;
+}
+
+#nav1{
+    margin:15px;
+}
+
+//PARTIE NOUVEAUTE
+#diapo{
+	background: url(../img/IMG_0018.JPG) no-repeat left;
+    background-size: cover;
+    height: 90vh;
+    margin-bottom: 50px;
+    //background-attachement:fixed permet que l'image ne bouge pas mais le contenu si.
+    h5{
+        color: $couleur-police;
+    }
+}
+//forme drapeau dans Nouveauté
+.parallelogramme::before{
+	width:300px;
+	height:40px;
+	background:#4169E1;
+	-webkit-transform:skew(-50deg);
+	-moz-transform:skew(-50deg);
+	-o-transform:skew(-50deg);
+    transform:skew(-50deg);
+    content: '';
+    position: absolute;
+    z-index: 0;
+    top: 51px;
+    left: -30px;
+    opacity:0.80 ;
+}
+
+.parallelogramme::after{
+	width:300px;
+	height:40px;
+	background:#4169E1;
+	-webkit-transform:skew(50deg);
+	-moz-transform:skew(50deg);
+	-o-transform:skew(50deg);
+    transform:skew(50deg);
+    content: '';
+    position: absolute;
+    z-index: 0;
+    top: 91px;
+    left: -30px;
+    opacity: 0.80;
+}
+.nouveautes{
+        position: relative;
+        top:64px;
+}
+
+//PARTIE COLLECTION
+//Dégrader
+.card{
+    border:0;
+}
+
+.rectangle::before{
+    width: 368px;
+    height: 540px;
+	background:linear-gradient(rgb(239,156,17), rgba(239,96,68,0.82), rgba(221,149,26,0.86), rgba(120,78,9,0.42));
+    content: '';
+    position: absolute;
+    z-index: 0;
+    bottom: -8px;
+    right: 24px;
+}
+#été{
+        left: -18px;
+}
+
+.rectangle2::before{
+    width: 368px;
+    height: 249px;
+	background:linear-gradient(rgba(118,42,85,0.62), rgb(116,25,77,));
+    content: '';
+    position: absolute;
+    z-index: 0;
+    bottom: -8px;
+    right: 6px;
+}
+
+
+.rectangle3::before{
+    width: 368px;
+    height: 253px;
+	background:linear-gradient(rgba(187,188,187,1), rgba(94,94,94,0.87));
+    content: '';
+    position: absolute;
+    z-index: 0;
+    bottom: -67px;
+    right: 6px;
+}
+.rectangle4::before{
+    width: 368px;
+    height: 540px;
+	background:linear-gradient(rgb(12,181,207), rgba(13,136,155,0.90),);
+    content: '';
+    position: absolute;
+    z-index: 0;
+    bottom: -8px;
+    right: -14px;
+}
+
+#street{
+    left: 20px;
+}
+
+#originale{
+    position: relative;
+    top: 58px;
+}
+
+//rectangle blanc
+.rectangle5::after{
+    width: 350px;
+    height: 28px;
+    background: white;
+    content: '';
+    position: absolute;
+    z-index: 0;
+    bottom: 0px; 
+    right: 33px;
+    opacity: 0.78;
+}
+
+.rectangle6::after{
+    width: 350px;
+    height: 28px;
+    background: white;
+    content: '';
+    position: absolute;
+    z-index: 0;
+    bottom: 0px; 
+    right: 15px;
+    opacity: 0.78;
+}
+.rectangle7::after{
+    width: 350px;
+    height: 28px;
+    background: white;
+    content: '';
+    position: absolute;
+    z-index: 0;
+    bottom: -58px; 
+    right: 15px;
+    opacity: 0.78;
+}
+.rectangle8::after{
+    width: 350px;
+    height: 28px;
+    background: white;
+    content: '';
+    position: absolute;
+    z-index: 0;
+    bottom: 0px; 
+    right: -5px;
+    opacity: 0.78;
+}
+
+.card-title1{
+    position: absolute;
+    top:500px;
+    right: 147px;
+}
+.card-title2{
+    position: absolute;
+    top: 207px;
+    right: 83px;
+}
+.card-title3{
+    position: absolute;
+    top: 265px;
+    right: 107px;
+}
+.card-title4{
+    position: absolute;
+    top:500px;
+    right: 83px;
+}
+
+//PARTIE T-SHIRT PERSONNALISABLE
+//forme drapeau dans Personnalisable
+.parallelogramme2::before{
+    width: 488px;
+	height:40px;
+	background:$couleur-personnalisation;
+	-webkit-transform:skew(-50deg);
+	-moz-transform:skew(-50deg);
+	-o-transform:skew(-50deg);
+    transform:skew(-50deg);
+    content: '';
+    position: absolute;
+    z-index: 0;
+    top: 51px;
+    left: -213px;
+    opacity:0.80 ;
+}
+
+.parallelogramme2::after{
+    width: 488px;
+	height:40px;
+	background:$couleur-personnalisation;
+	-webkit-transform:skew(50deg);
+	-moz-transform:skew(50deg);
+	-o-transform:skew(50deg);
+    transform:skew(50deg);
+    content: '';
+    position: absolute;
+    z-index: 0;
+    top: 91px;
+    left: -213px;
+    opacity: 0.80;
+}
+.text2{
+    position: relative;
+    left: -180px;
+    top: 62px;
+    color: black;
+}
+#t-shirt{
+    margin-top: 50px;
+}
+
+#go{
+    background:linear-gradient(rgb(190,201,32), rgba(111,118,19,0.75));
+    border: none;
+    width: 132px;
+    height: 85px;
+    font-size: 3em;
+    position: absolute;
+    bottom: 104px;
+    right: 136px;
+}
+
+//PARTIE NOTRE SELECYION
+//forme drapeau dans selection
+.parallelogramme3{
+    position: relative;
+
+top: 150px;
+
+z-index: 20;
+}
+.parallelogramme3::before{
+    width: 488px;
+	height:40px;
+	background:#7F459B;
+	-webkit-transform:skew(-50deg);
+	-moz-transform:skew(-50deg);
+	-o-transform:skew(-50deg);
+    transform:skew(-50deg);
+    content: '';
+    position: absolute;
+    z-index: 0;
+    top: -94px;
+    left: -68px;
+    opacity:0.80 ;
+}
+
+.parallelogramme3::after{
+    width: 488px;
+	height:40px;
+	background:#7F459B;
+	-webkit-transform:skew(50deg);
+	-moz-transform:skew(50deg);
+	-o-transform:skew(50deg);
+    transform:skew(50deg);
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: -54px;
+    left: -68px;
+    opacity: 0.80;
+}
+//images
+#pers{
+    padding: 0;
+    margin-bottom: 30px;
+}
+.selection{
+    position: relative;
+    left: 54px;
+    top: -83px; 
+    color: black;
+}
+.ligne::before{
+    width: 1519px;
+    height: 11px;
+	background:linear-gradient(rgba(140,94,163,1), rgba(73,49,85,0.80),rgba(70,47,82,0.79));
+    content: '';
+    position: absolute;
+    z-index: 0;
+    bottom: -10px;
+    right: 0px;
+}
+#partie-selection{
+    margin-bottom: 30px;
+}
+
+//PARTE RESEAU
+#picto{
+    width: 95px;
+    padding: 15px;
+}
+
+//PARTIE INFO
+#legende{
+    font-size: 0.8em;
+}
+//PARTIE NEWSLETTER
+#news{
+    text-align: center;
+}
+
+//FOOTER
+footer p{
+    font-size: 0.5em;
+    margin:0;
+}
